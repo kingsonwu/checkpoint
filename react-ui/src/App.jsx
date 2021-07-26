@@ -1,12 +1,12 @@
-import Header from "./Sections/Header/Header";
-import Footer from "./Sections/Footer/Footer";
-import Body from "./Sections/Body/Body";
+import Header from "./Sections/header/Header";
+import Footer from "./Sections/footer/Footer";
+import Main from "./Sections/main/Main";
 
 function App() {
   return (
     <>
     <Header />
-    <Body />
+      <Main />
     <Footer />
   </>
   );

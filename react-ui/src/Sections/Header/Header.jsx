@@ -1,16 +1,17 @@
 import { NavLink } from "react-router-dom";
+// import Greeting from "../../components/greeting"
 
-function Header() {
+const Header = () => {
   return (
     <header>
-      <div>Home</div>
+      <div><NavLink to="/">Home</NavLink></div>
       <ul>
         <li>
           <NavLink to="/about">About</NavLink>
 
         </li>
         <li>
-          <NavLink to="/get-started">Get Started</NavLink>
+          <NavLink to="/getstarted">Get Started</NavLink>
 
         </li>
         <li>
@@ -18,6 +19,7 @@ function Header() {
 
         </li>
       </ul>
+      {/* <Greeting /> */}
     </header>
   );
 }
