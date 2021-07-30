@@ -1,14 +1,22 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink,} from "react-router-dom";
+import { Container, Navbar } from "react-bootstrap";
+
 
 const Footer = () => {
   return (
-    <footer> 
-      <li>Copyright 2021</li>
-      <li><a href="https://github.com/kingsonwu/checkpoint">Github</a></li>
-      <li><NavLink to = "/credits">Credits</NavLink></li>
-
-    </footer>
+    <>
+    <footer fixed-bottom>    
+    <Container>
+  <Navbar  expand="lg md sm" variant="light">
+    <Container>
+      <Navbar.Brand href="#">Navbar</Navbar.Brand>
+    </Container>
+  </Navbar>
+</Container> 
+  </footer>
+    
+</>
   );
-}
+};
 
 export default Footer;
