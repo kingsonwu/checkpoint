@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -10,7 +12,25 @@ body {
   text-align: center;
 }
 
-/* Landing Page */
+ 
+
+/* Header */
+.brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.me-auto{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: .5rem;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+/* Landing Page -------------- */
 
 #statistics {
   padding: 7% 15%;
@@ -18,8 +38,44 @@ body {
   text-align: center
 }
 
+.factquote {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Testimonial Section */
 #testimonials {
   padding: 7% 15%;
   text-align: center;
-  background-color: lightgray;
+  background-color: #EFEFEF;
+}
+.wrap-carousel {
+  max-width: 40rem;
+  min-width: 15rem;
+}
+
+.carousel-item {
+  padding: 0% 15%;
+}
+
+#press {
+  padding-bottom: 5%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+
+}
+
+.color-section {
+  background-color: #EFEFEF;
+}
+
+.container {
+  padding:7% 15%;
+}
+#footer {
+  border: green 2px solid;
+  padding: 6% 15%;
 }

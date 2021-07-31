@@ -1,19 +1,21 @@
 // import { NavLink,} from "react-router-dom";
-import { Container, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/row"
+import Col from "react-bootstrap/Col"
 
 
 const Footer = () => {
   return (
     <>
-    <footer fixed-bottom>    
-    <Container>
-  <Navbar  expand="lg md sm" variant="light">
-    <Container>
-      <Navbar.Brand href="#">Navbar</Navbar.Brand>
-    </Container>
-  </Navbar>
-</Container> 
-  </footer>
+    <footer class="white-section" id="footer">
+      <Container fluid>
+        <Row>
+          <Col>
+            <p>© Copyright 2020 Checkpoint</p>
+          </Col>
+          </Row>
+      </Container>
+    </footer>
     
 </>
   );
