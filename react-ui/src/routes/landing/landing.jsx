@@ -24,7 +24,7 @@ const Landing = () => {
    <Row>
    <Col>
       <h2 className = "factquote">
-        64% of millenials and 53% of Gen Z say they don't have many goals in life.
+       A staggering 64% of millenials and 53% of Gen Z say they don't have many goals in life.
       </h2>
       </Col>
    </Row>
@@ -89,11 +89,14 @@ const Landing = () => {
 
 
 
-   <section className = "color-section" id = "press">
-    <img class="press-logo" src="../../../assets/tnw.png" alt="tnw-logo" />
-    <img class="press-logo" src="../../../assets/bizinsider.png" alt="biz-logo" />
-    <img class="press-logo" src="../../../assets/mashable.png" alt="mash-logo" />
-    <img class="press-logo" src="../../../assets/TechCrunch.png" alt="crunch-logo" />
+   <section className = "color-section" id = "companys">
+    <img className="co-logo" src="https://i.ibb.co/5M9QJtZ/tnw.png" alt="tnw-logo" />
+    <img className="co-logo" src="https://i.ibb.co/pw1HV3T/bizinsider.png" alt="biz-logo" />
+    <img className="co-logo" src="https://i.ibb.co/Xbvyrkz/mashable.png" alt="mash-logo" />
+    <br />
+    <img className="co-logo" src="https://i.ibb.co/gzNpjsL/Tech-Crunch.png" alt="crunch-logo" />
+    <img className="co-logo" src="https://i.ibb.co/0D7dbkM/forbes.png" alt="forbes-logo" />
+
    </section>
    </>
    )

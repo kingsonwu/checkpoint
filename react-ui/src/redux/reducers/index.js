@@ -1,4 +1,4 @@
-// import { combineReducers } from "redux";
-// import username from "./username";
+import { combineReducers } from "redux";
+import goals from "./goals";
 
-// export default combineReducers({username});
+export default combineReducers({goals});

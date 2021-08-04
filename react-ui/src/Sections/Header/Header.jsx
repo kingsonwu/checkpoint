@@ -1,6 +1,5 @@
 // import { NavLink } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
-// import Greeting from "../../components/greeting"
 
 const Header = () => {
   return (
@@ -19,4 +18,4 @@ const Header = () => {
     );
   }
 export default Header;
-      // {/* <Greeting /> */}
+      // <Greeting /> 
