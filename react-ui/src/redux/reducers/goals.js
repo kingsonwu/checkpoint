@@ -4,7 +4,9 @@ const initialState = [];
 
 function goals (state=initialState, action) {
   if (action.type === GET_GOALS) {
-    return action.payload.goal;
+    const copy = state.slice();
+    copy.push(action.payload.goal)
+    return copy;
   }
   return state;
 }

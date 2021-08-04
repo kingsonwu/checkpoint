@@ -1,16 +1,21 @@
 // import { Form } from "react-bootstrap"
+import { current } from "@reduxjs/toolkit";
 import { useState } from "react";
+import { connect } from 'react-redux';
+import { updateGoals } from '../../redux/action';
 
-const Getstarted = () => {
-const [currentGoal, setCurrentGoal] = useState("")
-const [goals, setGoals] = useState([])
+const Getstarted = ({ goals, updateGoals }) => {
+
+const [currentGoal, setCurrentGoal] = useState("");
+
 
 function handleChange(goal) {
-    setCurrentGoal(goal) 
+    setCurrentGoal(goal);
 }
+
 const handleSubmit = (e) => {
     e.preventDefault()
-    setGoals(goals.concat(currentGoal))
+    updateGoals(currentGoal);
     setCurrentGoal("")
 }
 
@@ -34,5 +39,12 @@ return (
     ) 
 };
 
+const mapStateToProps = state => ({
+  goals: state.goals
+});
 
-export default Getstarted
+const mapDispatchToProps = dispatch => ({
+  updateGoals: (goal) => dispatch(updateGoals(goal))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Getstarted);
